@@ -1,0 +1,144 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(https://img.freepik.com/free-photo/space-galaxy-background_53876-93121.jpg?w=996&t=st=1669520488~exp=1669521088~hmac=38de49b1125c7d1e88a258305a911e6640eb0181d6ea47f5596f525e2f1af262);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+.menu {
+    height: 200px;
+    width: 200px;
+    background-image: url(https://img.freepik.com/free-photo/beautiful-shining-stars-night-sky_181624-622.jpg?w=996&t=st=1669520576~exp=1669521176~hmac=3f83e73b148da87c5773e90c6f39607caa52ecb45fd30d87056e8bac26493288);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    border-radius: 50%;
+    transition: 0.5s;
+
+    /* Default position: corner_00 => top-left */
+    top: 0;
+    left: 0;
+    translate: -50% -50%;
+    /* --------------------------------------- */
+}
+
+.menu:before {
+    content: '';
+    background:url(https://cdn3d.iconscout.com/3d/premium/thumb/rocket-3783762-3162224.png);
+    background-size:cover;
+    position:fixed;
+    width:50px;
+    height:50px;
+    transition: 1s;
+
+    /* Default position: corner_00 => top-left */
+    bottom: 0;
+    right: 0;
+    translate: -80% -80%;
+    /* --------------------------------------- */
+}
+
+.menu:hover {
+    height: 700px;
+    width: 700px;
+}
+
+.menu:hover:before {
+    translate: -700% -700%;
+}
+
+/* REGION: positional options for the corner menu */
+
+.menu.corner_00 {
+    top: 0;
+    right: auto;
+    left: 0;
+    bottom: auto;
+    translate: -50% -50%;
+}
+.menu.corner_00:before {
+    top: auto;
+    right: 0;
+    left: auto;
+    bottom: 0;
+    translate: -70% -70%;
+    rotate: 90deg;
+}
+.menu.corner_00:hover:before {
+    rotate: 270deg;
+    translate: -700% -700%;
+}
+
+.menu.corner_01 {
+    top: 0;
+    right: 0;
+    left: auto;
+    bottom: auto;
+    translate: 50% -50%;
+}
+.menu.corner_01:before {
+    top: auto;
+    right: auto;
+    left: 0;
+    bottom: 0;
+    translate: 70% -70%;
+    rotate: 180deg;
+}
+.menu.corner_01:hover:before {
+    rotate: 0deg;
+    translate: 700% -700%;
+}
+
+.menu.corner_10 {
+    top: auto;
+    right: 0;
+    left: auto;
+    bottom: 0;
+    translate: 50% 50%;
+}
+.menu.corner_10:before {
+    top: 0;
+    right: auto;
+    left: 0;
+    bottom: auto;
+    translate: 70% 70%;
+    rotate: 270deg;
+}
+.menu.corner_10:hover:before {
+    rotate: 90deg;
+    translate: 700% 700%;
+}
+
+.menu.corner_11 {
+    top: auto;
+    right: auto;
+    left: 0;
+    bottom: 0;
+    translate: -50% 50%;
+}
+.menu.corner_11:before {
+    top: 0;
+    right: 0;
+    left: auto;
+    bottom: auto;
+    translate: -70% 70%;
+    rotate: 0deg;
+}
+.menu.corner_11:hover:before {
+    rotate: 180deg;
+    translate: -700% 700%;
+}
+
+/* ---------------------------------------------- */
