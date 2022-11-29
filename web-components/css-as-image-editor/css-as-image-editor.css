@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    background-color: #11000050;
+
+}
+
+.logo img {
+
+    /* Set a specific width to the image */
+    width: 30%;
+
+    /* Set a new aspect ratio to the image */
+    aspect-ratio: 3/2;
+
+    /* 'contain' ====> Scale the image to maintain its aspect ratio while fitting within the element's content box */
+    /* 'cover' ======> Size the image to maintain its aspect ratio while fitting within the element's content box */
+    /* 'fill' =======> Size the image without maintaining its aspect ratio to fill the element's content box */
+    /* 'scale-down' => Scale image as 'contain' or do nothing as 'none', whichever would result in a smaller concrete object size */
+    /* 'none' =======> No update */
+    object-fit: contain;
+
+    /* Remove white background from the image */
+    mix-blend-mode: color-burn;
+
+}
