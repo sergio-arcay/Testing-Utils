@@ -32,8 +32,8 @@ body {
     /* Set a new aspect ratio to the image */
     aspect-ratio: 3/2;
 
-    /* 'contain' ====> Scale the image to maintain its aspect ratio while fitting within the element's content box */
-    /* 'cover' ======> Size the image to maintain its aspect ratio while fitting within the element's content box */
+    /* 'contain' ====> Scale the image to maintain its aspect ratio while fitting within the element's content box (letterboxed to fit) */
+    /* 'cover' ======> Size the image to maintain its aspect ratio while filling within the element's content box (clipped to fit) */
     /* 'fill' =======> Size the image without maintaining its aspect ratio to fill the element's content box */
     /* 'scale-down' => Scale image as 'contain' or do nothing as 'none', whichever would result in a smaller concrete object size */
     /* 'none' =======> No update */
