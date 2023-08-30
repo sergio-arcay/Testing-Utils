@@ -172,6 +172,10 @@ def dfs_to_destination_with_costs(origin, destination, max_cost, graph, _trail=N
         return _results
 
 
+# TODO Nodes with an individual priority value? This algorithm could be finished once an acceptable total priority
+#  was reached.
+
+
 if __name__ == '__main__':
 
     graph_with_reachable_nodes = {
