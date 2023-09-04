@@ -1,0 +1,68 @@
+# Visual Studio
+.vs/
+
+# JetBrains IDE
+.idea/
+
+# VS Code IDE
+.vscode/
+.history/
+*.code-workspace
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C# and .NET artifacts
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+*.frx
+*.csproj.user
+*.cache
+*.dll
+*.pdb
+*.exe
+
+# Folder config file
+Desktop.ini
+
+# Windows Files
+desktop.ini
+$RECYCLE.BIN/
+Thumbs.db
+ehthumbs.db
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Unix
+*.swp
+*.swo
+*.swn
+
+# Virtual Environments
+venv/
+*.venv
+venv.bak/
+.venv.bak/
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+Pipfile
+Pipfile.lock
+
+# Others
+*.pid
+*.log
+*.sqlite
